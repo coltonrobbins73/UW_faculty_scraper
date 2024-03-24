@@ -16,6 +16,8 @@ for url in url_list:
         interests_2.append(test['paragraph_2'])
         if 'link' in test:
             lab_url.append(test['link'])
+        else:
+            lab_url.append('No URL')
 
 all_interests = [interests_1[i] + ', ' + interests_2[i] for i in range(len(interests_1))]
 
